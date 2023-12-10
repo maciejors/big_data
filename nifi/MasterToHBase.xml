@@ -187,8 +187,8 @@
             <id>919bddcf-194b-3a5d-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>30.95166015625</x>
-                <y>66.09651947021484</y>
+                <x>32.0</x>
+                <y>64.0</y>
             </position>
             <bundle>
                 <artifact>nifi-hadoop-nar</artifact>
@@ -402,15 +402,20 @@
                 <name>success</name>
             </relationships>
             <state>STOPPED</state>
-            <style/>
+            <style>
+                <entry>
+                    <key>background-color</key>
+                    <value>#ff0000</value>
+                </entry>
+            </style>
             <type>org.apache.nifi.processors.hadoop.GetHDFS</type>
         </processors>
         <processors>
             <id>cafbc368-7368-3a1b-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>30.69482421875</x>
-                <y>474.98045349121094</y>
+                <x>32.0</x>
+                <y>472.0</y>
             </position>
             <bundle>
                 <artifact>nifi-hbase-nar</artifact>
@@ -550,8 +555,8 @@
             <id>e2ff7c4b-874c-32ff-0000-000000000000</id>
             <parentGroupId>d3edd9d7-3244-387e-0000-000000000000</parentGroupId>
             <position>
-                <x>30.95166015625</x>
-                <y>273.0482406616211</y>
+                <x>32.0</x>
+                <y>272.0</y>
             </position>
             <bundle>
                 <artifact>nifi-standard-nar</artifact>
@@ -613,5 +618,5 @@
             <type>org.apache.nifi.processors.standard.SplitJson</type>
         </processors>
     </snippet>
-    <timestamp>12/09/2023 17:29:38 UTC</timestamp>
+    <timestamp>12/10/2023 14:52:21 UTC</timestamp>
 </template>
