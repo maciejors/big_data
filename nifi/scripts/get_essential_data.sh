@@ -1,10 +1,10 @@
 #!/bin/bash
 
-start_timestamp=$(date -d "January 1, 2023" + %s)
+start_timestamp=$(date -d "January 1, 2023" +%s)
 
-current_timestamp=$(date + %s)
+current_timestamp=$(date +%s)
 
-interval = 21600
+interval=21600
 
 timestamp=$start_timestamp
 
@@ -16,3 +16,4 @@ while [ $timestamp -lt $current_timestamp ]; do
     curl -k --compressed -X GET $url -o $filename
     
     timestamp=$((timestamp + interval))
+done
