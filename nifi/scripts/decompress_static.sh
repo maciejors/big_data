@@ -16,5 +16,6 @@ echo "Done."
 echo "Cleanup..."
 rm ${output}/Posts.xml
 rm ${output}/PostHistory.xml
+rm ${output}/Users.xml
 echo "Done."
 echo "Exiting script."

@@ -5,6 +5,7 @@ from xml.etree import ElementTree
 ds_dir = './data/datascience'
 posts_path = f'{ds_dir}/Posts.xml'
 posthistory_path = f'{ds_dir}/PostHistory.xml'
+users_path = f'{ds_dir}/Users.xml'
 
 CHUNK_SIZE = 10000
 
@@ -33,12 +34,16 @@ def split(ctx, main_tag):
     else:
         # remove empty file
         os.remove(curr_file_path)
-        
+
 
 # split Posts.xml
 context = ElementTree.iterparse(posts_path, events=('end', ))
 split(context, 'posts')
 
 # split PostHistory.xml
-context = ElementTree.iterparse(posts_path, events=('end', ))
+context = ElementTree.iterparse(posthistory_path, events=('end', ))
 split(context, 'posthistory')
+
+# split Users.xml
+context = ElementTree.iterparse(users_path, events=('end', ))
+split(context, 'users')
