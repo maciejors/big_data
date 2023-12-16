@@ -2,7 +2,6 @@
 
 start_timestamp=$(date -d "August 13, 2023" +%s)
 end_timestamp=$(date -d "October 13, 2023" +%s)
-current_timestamp=$(date +%s)
 
 interval=21600
 
