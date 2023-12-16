@@ -1,0 +1,9 @@
+# Stworzenie tabeli dla danych online (StackOverflow)
+
+create "stackoverflow", "post_details", "owner", "tags"
+
+# Stworzenie tabeli dla danych statycznych (DataScience Stack Exchange)
+
+create "datascience_posts", "post", "tags" 
+
+create "datascience_users", "user"
